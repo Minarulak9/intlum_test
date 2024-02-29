@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="./imgs/section_shade.webp" type="image/x-icon">
     <!-- bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/media.css">
     <script src="./src/app.js" defer></script>
@@ -25,26 +28,27 @@
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#welcome">About Us</a>
                   </li>
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Services
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#service">Indoor Painting</a></li>
+                            <li><a class="dropdown-item" href="#service">Outdoor Painting</a></li>
+                            <li><a class="dropdown-item" href="#service">Two-color Wall Service</a></li>
+                            <li><a class="dropdown-item" href="#service">Interrior Decoraction</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Faq</a>
+                      <a class="nav-link" href="#faq">Faq</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Blog</a>
+                      <a class="nav-link" href="#blogs">Blog</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#get_in">Contact</a>
                     </li>
                 </ul>
                 <div class="call d-flex align-items-center gap-2 ">
@@ -58,10 +62,10 @@
           </nav>
 
           <div class="header-content align-items-center d-flex">
-            <div class="container" style="z-index: 1;">
+            <div class="container" style="z-index: 1;" data-aos="fade-up" data-aos-duration="1500">
                 <div class="heading">May your <span class="bold">house</span> <br>be your canves</div>
                 <p class="text">The Best interior Design Compnay In Kolkata</p>
-                <a href="#" class="consultation_btn">Book Consultation</a>
+                <a href="#!" class="consultation_btn">Book Consultation</a>
             </div>
           </div>
     </header>
@@ -102,7 +106,7 @@
 
       <div class="container">
         <div class="row gap-0 row-gap-3">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-once="true" data-aos-duration="1500">
             <div class="section_heading">
               A Few Words
             </div>
@@ -163,7 +167,7 @@
     <section id="service">
       <div class="container">
         <div class="row row-gap-4">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-once="true" data-aos-duration="1500">
             <div class="section_heading d-inline-block">Our Service</div>
             <br>
             <div class="service_text">
@@ -237,7 +241,7 @@
         <br>
 
         <div class="d-flex justify-content-between align-items-center flex-wrap row-gap-3">
-          <div class="left">
+          <div class="left" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500">
             <div class="project_section_heading light">Projects We Have <span class="mid">Done</span></div>
             <div class="project_section_para text-muted">Customize your <span class="mid">home with luxury</span> and love from the most <span class="mid">affordable interior design studio in Kolkata.</span></div>
           </div>
@@ -394,6 +398,10 @@
           <p class="para">Our interior decoration and design services in Kolkata are customized to individual requirements and preferences,<br>offering the best-in-class design and renovation that your space demands. </p>
         </div>
 
+        <div class="img mt-4">
+          <img src="./imgs/numbers.png" class="img-fluid" alt="">
+        </div>
+
 
 
       </div>
@@ -414,7 +422,7 @@
           </div>
 
           <div class="row mt-4">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-right" data-aos-once="true" data-aos-duration="1500">
               <img src="./imgs/faq.png" alt="" class="img-fluid">
             </div>
             <div class="col-md-6">
@@ -470,15 +478,145 @@
       </div>
     </section>
 
+    <section id="testimonials">
+      <div class="container">
+        <div class="section_heading d-inline-block">Testimonials</div>
+        <br>
+        <div class="d-flex justify-content-between align-items-end">
+          <div class="left" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500">
+            <div class="project_section_heading light">Our <span class="mid">Happy </span>Clients</div>
+            <p class="testimonials_para font-sm">Every wall has a story - that's what we believe at Artflare. Our indoor painting services are dedicated to creating a unified blend of your style and personality within the boundaries of your home.</p>
+          </div>
+          <div class="right d-flex gap-3">
+            <button class="prev">
+              <img src="./imgs/icons/next.svg" alt="">
+            </button>
+            <button class="next">
+              <img src="./imgs/icons/next.svg" alt="">
+            </button>
+
+          </div>
+        </div>
+        <div class="swiper mySwiper mt-5 testi_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide rounded shadow">
+              <p class="para">Thanks, Artflare for transforming my 
+                home to a house I’ve only watched in movies.</p>
+                <div class="footer d-flex align-items-center gap-3">
+                  <div class="img">
+                    <img src="./imgs/clients/c1.png" alt="">
+                  </div>
+                  <div class="details d-flex flex-column">
+                    <div class="name mid">Kunal Basu</div>
+                    <div class="tag font-sm text-muted">Businessman</div>
+                    <div class="stars">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide rounded shadow">
+              <p class="para">I had a very tight deadline. I didn’t 
+                think Artflare would be able to do it. 
+                But they finished the project even 
+                before time! Kudos!</p>
+                <div class="footer d-flex align-items-center gap-3">
+                  <div class="img">
+                    <img src="./imgs/clients/c2.png" alt="">
+                  </div>
+                  <div class="details d-flex flex-column">
+                    <div class="name mid">Aditya Paul</div>
+                    <div class="tag font-sm text-muted">Businessman</div>
+                    <div class="stars">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide rounded shadow">
+              <p class="para">It was an amazing experience with 
+                Artflare. I’m blown away with their 
+                expertise and creativity.</p>
+                <div class="footer d-flex align-items-center gap-3">
+                  <div class="img">
+                    <img src="./imgs/clients/c3.png" alt="">
+                  </div>
+                  <div class="details d-flex flex-column">
+                    <div class="name mid">Sweta Acharya</div>
+                    <div class="tag font-sm text-muted">Businessman</div>
+                    <div class="stars">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide rounded shadow">
+              <p class="para">Thanks, Artflare for transforming my 
+                home to a house I’ve only watched in movies.</p>
+                <div class="footer d-flex align-items-center gap-3">
+                  <div class="img">
+                    <img src="./imgs/clients/c4.png" alt="">
+                  </div>
+                  <div class="details d-flex flex-column">
+                    <div class="name mid">Kunal Basu</div>
+                    <div class="tag font-sm text-muted">Businessman</div>
+                    <div class="stars">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-slide rounded shadow">
+              <p class="para">Thanks, Artflare for transforming my 
+                home to a house I’ve only watched in movies.</p>
+                <div class="footer d-flex align-items-center gap-3">
+                  <div class="img">
+                    <img src="./imgs/clients/c2.png" alt="">
+                  </div>
+                  <div class="details d-flex flex-column">
+                    <div class="name mid">Aditya Paul</div>
+                    <div class="tag font-sm text-muted">Businessman</div>
+                    <div class="stars">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                      <img src="./imgs/icons/star.png" alt="">
+                    </div>
+                  </div>
+                </div>
+            </div>
 
 
-    <section id="projects">
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+    <section id="blogs">
       <div class="container">
         <div class="section_heading d-inline-block">We are in news </div>
         <br>
 
         <div class="d-flex justify-content-between align-items-center flex-wrap row-gap-3">
-          <div class="left">
+          <div class="left" data-aos="fade-up" data-aos-once="true" data-aos-duration="1500">
             <div class="project_section_heading light">Our Latest <span class="mid">Blog</span></div>
           </div>
           <div class="right">
@@ -504,36 +642,170 @@
         </div>
       </div>
     </section>
+    <section id="get_in">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="section_heading d-inline-block">Contact Us</div>
+              <br>
+              <div class="get_in_touch_text" data-aos="fade-right" data-aos-once="true" data-aos-duration="1500">
+                <div class="get_in_touch">Keep in <span class="mid">touch</span></div>
+                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing eli </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <form action="" class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-input" placeholder="Enter your Name">
+                  <input type="text" class="form-input" placeholder="Enter your Email">
+                  <input type="text" class="form-input" placeholder="Enter Subject">
+                </div>
+                <div class="col-md-6">
+                  <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-input"></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="submit_btn">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+  </section>
 
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 border-end-me">
+          <div class="logo">
+            <img src="./imgs/icons/logo.png" alt="">
+          </div>
+          <div class="mid text-light my-2">We build safety & comfort for you</div>
+          <p class="para">After providing interior and exterior home color paint 
+            solutions to our clients across Kolkata for a decade, 
+            Artflare has fostered the ability to transform a space 
+            with the magic of color.</p>
+            <p class="para mt-1">
+              From houses to commercial properties, we are the most 
+              reliable house painting contractors in Kolkata equipped 
+              to transform your space while giving it a character. </p>
+        </div>
+        <div class="col-md-8 text-white">
+          <div class="px-5">
+            <div class="row" id="links">
+              <div class="col-md-3">
+                <div class="link_heading">Quick Links</div>
+                <p>
+                  <a href="#!" class="footer_link">Home</a>
+                </p>
+                <p>
+                  <a href="#!" class="footer_link">About Us</a>
+                </p>
+                <p>
+                  <a href="#!" class="footer_link">Contact</a>
+                </p>
+                <p>
+                  <a href="#!" class="footer_link">Services</a>
+                </p>
+                <p>
+                  <a href="#!" class="footer_link">FAQ</a>
+                </p>
+                <p>
+                  <a href="#!" class="footer_link">Blog</a>
+                </p>
+              </div>
+              <div class="col-md-3">
+                <div class="link_heading">Services</div>
+                <p>
+                  <a href="#!" class="footer_link">Indoor Painting</a>
+                </p>
+                <p>
+                  <a href="#!" class="footer_link">Outdoor Painting</a>
+                </p>
+                <p>
+                  <a href="#!" class="footer_link">Two-color Wall Service</a>
+                </p>
+                <p>
+                  <a href="#!" class="footer_link">Interrior Decoraction</a>
+                </p>
+
+              </div>
+              <div class="col-md-6">
+                <div class="link_heading">Services</div>
+
+                <div class="details">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="icon"><img src="./imgs/icons/map.png" alt=""></div>
+                    <div class="text">107 Rabindra sarani Durganagar India <br>
+                      Kolkata 700065
+                      </div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="icon"><img src="./imgs/icons/email.png" alt=""></div>
+                    <div class="text"><a href="mailto:Info@artflareinterior.com">Info@artflareinterior.com</a></div>
+                  </div>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="icon"><img src="./imgs/icons/call2.png" alt=""></div>
+                    <div class="text"><a href="tel:+91 1234 5678 ">+91 1234 5678 </a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright mt-5 pt-3">
+        <div class="d-flex justify-content-between align-items-center">
+           <div class="social_links d-flex gap-3">
+              <a href="#!" class="social"><img src="./imgs/icons/facebook-f.svg" alt=""></a>
+              <a href="#!" class="social"><img src="./imgs/icons/twitter.svg" alt=""></a>
+              <a href="#!" class="social"><img src="./imgs/icons/instagram.svg" alt=""></a>
+           </div>
+           <p class="text">Artflare Interior © 2023. All Rights Reserved.  |  Privacy Poli</p>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
 
 
 
     <!-- bootstrap script CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       $(document).ready(function() {
-    // Initialize the tabs
-      $('#ex1 a[data-mdb-tab-init]').on('shown.bs.tab', function (e) {
-        // Get the active tab's href value
-        var activeTab = $(e.target).attr('href');
+        $('#ex1 a[data-mdb-tab-init]').on('shown.bs.tab', function (e) {
+          var activeTab = $(e.target).attr('href');
+          });
+          var hash = window.location.hash;
+          if (hash) {
+            $('#ex1 a[data-mdb-tab-init][href="' + hash + '"]').tab('show');
+          }
+
+          $('a[data-mdb-tab-init]').on('click', function(event) {
+            event.preventDefault();
+            var target = $(this).attr('href');
+
+            $(this).tab('show');
+          });
+        });
+
+
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false, 
+          },
+          navigation: {
+            nextEl: '.next',
+            prevEl: '.prev',
+          },
       });
-
-      // On page load, check if there's a hash in the URL and activate the corresponding tab
-      var hash = window.location.hash;
-      if (hash) {
-        $('#ex1 a[data-mdb-tab-init][href="' + hash + '"]').tab('show');
-      }
-
-      // Optional: Smooth scrolling when clicking on tabs
-      $('a[data-mdb-tab-init]').on('click', function(event) {
-        event.preventDefault();
-        var target = $(this).attr('href');
-
-        // Show the tab
-        $(this).tab('show');
-      });
-    });
+      AOS.init();
     </script>
 </body>
 </html>
