@@ -49,6 +49,16 @@
         display: flex;
         flex-direction: column-reverse;    
     }
+    #testimonials .swiper-slide{
+        height: 250px;
+    }
+    footer #links p{
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .border-end-me{
+        border-right: 0;
+    }
 }
 @media only screen and (max-width:600px){
     header{
@@ -58,6 +68,7 @@
         box-shadow: none !important;
         margin: 0;
     }
+    
 }
 @media only screen and (max-width:450px){
     header{
